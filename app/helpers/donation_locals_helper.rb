@@ -1,0 +1,2 @@
+module DonationLocalsHelper
+end

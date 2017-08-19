@@ -1,0 +1,56 @@
+<%= form_with(model: donation_local, local: true) do |f| %>
+  <% if donation_local.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(donation_local.errors.count, "error") %> prohibited this donation_local from being saved:</h2>
+
+      <ul>
+      <% donation_local.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <p>
+      <%= f.label :donation_type %><br>
+      <%= f.text_field :donation_type %>
+    </p>
+
+    <p>
+      <%= f.label :street %><br>
+      <%= f.text_field :street %>
+    </p>
+
+    <p>
+      <%= f.label :neighborhood %><br>
+      <%= f.text_field :neighborhood %>
+    </p>
+
+    <p>
+      <%= f.label :state %><br>
+      <%= f.text_field :state %>
+    </p>
+
+    <p>
+      <%= f.label :city %><br>
+      <%= f.text_field :city %>
+    </p>
+    <p>
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :local_type %><br>
+      <%= f.text_field :local_type %>
+    </p>
+    <p>
+      <%= f.label :site %><br>
+      <%= f.text_field :site %>
+    </p>
+    <p>
+      <%= f.label :phone %><br>
+      <%= f.text_field :phone %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
