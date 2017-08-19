@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  donation_type: MyString
+  street: MyString
+  neighborhood: MyString
+  state: MyString
+  city: MyString
+  name: MyString
+  local_type: MyString
+  site: MyString
+  phone: MyString
+
+two:
+  donation_type: MyString
+  street: MyString
+  neighborhood: MyString
+  state: MyString
+  city: MyString
+  name: MyString
+  local_type: MyString
+  site: MyString
+  phone: MyString
