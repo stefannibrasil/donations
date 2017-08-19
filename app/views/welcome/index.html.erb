@@ -1,6 +1,20 @@
 <div class="jumbotron">
-  <h1>Bem-vindo a Doe Felicidade</h1>
-  <p>Conecte-se aos locais onde você pode doar e receber amor e felicidade!</p>
-  <p><%= link_to 'Cadastrar', donation_locals_path, class:"btn btn-primary btn-lg"%>
-    <%= link_to 'Buscar', search_new_path, class:"btn btn-success btn-lg"%></p>
+  <div class="row">
+    <div class="col-6">
+
+      <h1>Bem-vindo a Doe Felicidade</h1>
+      <p>Conecte-se aos locais onde você pode doar e receber amor e felicidade!</p>
+      <p><%= link_to 'Cadastrar', donation_locals_path, class:"btn btn-primary btn-lg"%>
+        <%= link_to 'Buscar', search_new_path, class:"btn btn-success btn-lg"%></p>
+    </div>
+    <div class="col-3 pull-right">
+
+        <%= image_tag('df.png', class:"rounded img-fluid img-thumbnail float-left")%>
+
+    </div>
+    <div class="col-3 pull-right">
+    <%= image_tag('henrietta.jpg', class:"rounded img-fluid")%>
+    </div>
+  </div>
+
 </div>
