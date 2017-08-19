@@ -5,6 +5,13 @@
 <table>
   <thead>
     <tr>
+      <th>Nome</th>
+      <th>Tipo de doação</th>
+      <th>Endereço</th>
+      <th>Tipo de local</th>
+      <th>Site</th>
+      <th>Telefone</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,6 +19,12 @@
   <tbody>
     <% @donation_locals.each do |donation_local| %>
       <tr>
+        <td><%= donation_local.name %></td>
+        <td><%= donation_local.donation_type %></td>
+        <td><%= "#{donation_local.street}-#{donation_local.neighborhood}-#{donation_local.city}-#{donation_local.state}" %></td>
+        <td><%= donation_local.local_type %></td>
+        <td><%= donation_local.site %></td>
+        <td><%= donation_local.phone %></td>
         <td><%= link_to 'Ver', donation_local %></td>
         <td><%= link_to 'Editar', edit_donation_local_path(donation_local) %></td>
         <td><%= link_to 'Deletar', donation_local, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>

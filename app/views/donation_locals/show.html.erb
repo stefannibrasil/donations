@@ -1,4 +1,33 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_donation_local_path(@donation_local) %> |
-<%= link_to 'Back', donation_locals_path %>
+<p>
+  <strong>Nome:</strong>
+  <%= @donation_local.name %>
+</p>
+
+<p>
+  <strong>Tipo de doação:</strong>
+  <%= @donation_local.donation_type %>
+</p>
+
+<p>
+  <strong>Endereço:</strong>
+  <%= "#{@donation_local.street}-#{@donation_local.neighborhood}-#{@donation_local.city}-#{@donation_local.state}" %>
+</p>
+
+<p>
+  <strong>Tipo de local:</strong>
+  <%= @donation_local.local_type %>
+</p>
+
+<p>
+  <strong>Site:</strong>
+  <%= @donation_local.site %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @donation_local.phone %>
+</p>
+<%= link_to 'Editar', edit_donation_local_path(@donation_local) %> |
+<%= link_to 'Voltar', donation_locals_path %>

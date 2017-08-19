@@ -10,6 +10,10 @@
       </ul>
     </div>
   <% end %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
     <p>
       <%= f.label :donation_type %><br>
       <%= f.text_field :donation_type %>
@@ -24,20 +28,15 @@
       <%= f.label :neighborhood %><br>
       <%= f.text_field :neighborhood %>
     </p>
-
-    <p>
-      <%= f.label :state %><br>
-      <%= f.text_field :state %>
-    </p>
-
     <p>
       <%= f.label :city %><br>
       <%= f.text_field :city %>
     </p>
     <p>
-      <%= f.label :name %><br>
-      <%= f.text_field :name %>
+      <%= f.label :state %><br>
+      <%= f.text_field :state %>
     </p>
+
     <p>
       <%= f.label :local_type %><br>
       <%= f.text_field :local_type %>

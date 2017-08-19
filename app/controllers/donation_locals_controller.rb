@@ -69,6 +69,7 @@ class DonationLocalsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def donation_local_params
-      params.fetch(:donation_local, {})
+      params.require(:donation_local).permit(:street,:neighborhood,:state,:city,
+                                             :name,:local_type,:site,:donation_type,:phone)
     end
 end
