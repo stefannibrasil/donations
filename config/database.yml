@@ -23,6 +23,6 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: donations_production
-  username: donations
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  database: doefelicidade_production
+  username: doefelicidade
+  password: <%= ENV['DOEFELICIDADE_DATABASE_PASSWORD'] %>
