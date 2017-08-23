@@ -21,8 +21,7 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: postgresql
-  host: localhost
-  encoding: unicode
+  <<: *default
   database: doefelicidade_production
-  pool: 5
+  username: myapp
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
