@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Doe Felicidade é um projeto criado no Rails Girls São Paulo 2017, que lista os centros de doações no Brasil.
 
-Things you may want to cover:
 
-* Ruby version
+** O que já funciona **
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Cadastro de instituições
+Lista de instituições
+Busca por bairro
