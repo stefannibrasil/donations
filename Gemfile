@@ -10,7 +10,6 @@ ruby '2.2.3'
 gem 'rails', '~> 5.1.3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
-gem 'sqlite3', '~> 1.3.13'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -38,6 +37,11 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
 end
 
 group :development do
